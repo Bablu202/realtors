@@ -9,6 +9,7 @@
   @media only screen and (max-width: $bp-1000px) {
     grid-column: 1 / -1;
     grid-row: 1 / span 1;
+
     justify-content: flex-end;
     align-items: center;
   }
@@ -23,22 +24,25 @@
   height: 0.35rem;
   width: 4.5rem;
   margin-top: 4rem;
-
+  z-index: 5;
   &::before,
   &::after {
     background-color: #fff;
-    height: 2px;
+    height: 2.5px;
     width: 4.5rem;
     content: "";
     display: block;
+    z-index: 5;
   }
   &::before {
     transform: translateY(-1.4rem);
   }
   &::after {
-    transform: translateY(1.4rem);
+    transform: translateY(1rem);
   }
   @media only screen and (max-width: $bp-1000px) {
+    visibility: hidden;
+
     margin-top: 0;
     margin-right: 3rem;
     &::before {
