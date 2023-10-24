@@ -66,7 +66,7 @@ body {
       minmax(6rem, 1fr) [full-end];
   }
 
-  /* @media only screen and (max-width: $bp-800px) {
-    grid-template-rows: 4rem calc(100vh - 4rem);
-  }*/
+   @media only screen and (max-width: $bp-800px) {
+    grid-template-rows: 0rem 90vh;
+  }
 }
