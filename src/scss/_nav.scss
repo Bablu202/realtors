@@ -1,8 +1,8 @@
 .nav {
   background-color: rgba($color-prime-1, 0.68);
-  width: 60vw;
+  width: 72vw;
   display: block;
-  padding: 0.8rem 1rem;
+  padding: 1.2rem 1.8rem;
   left: 50%;
   transform: translateX(-50%);
   bottom: 1rem;
@@ -10,7 +10,7 @@
   justify-content: space-between;
   border-radius: 3rem;
 
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(5px);
   position: fixed;
   z-index: 5;
 
@@ -28,7 +28,7 @@
     }
   }
   visibility: hidden;
-  @media only screen and (max-width: $bp-1000px) {
+  @media only screen and (max-width: $bp-800px) {
     visibility: visible;
   }
 }
