@@ -4,10 +4,16 @@
   margin: 15rem 0;
   display: grid;
   //grid-template-columns: repeat(3, 1fr);
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 6rem;
   align-items: start;
+
+ /* @media only screen and (max-width: $bp-800px) {
+    //grid-template-columns: repeat(2, 1fr);
+  }
+  @media only screen and (max-width: $bp-600px) {
+    // grid-template-rows: 20rem;
+  }*/
 }
 
 .feature {
