@@ -13,9 +13,14 @@
     align-items: center;
 
     @media only screen and (max-width: $bp-800px) {
+      height: 65vh;
+      grid-column: 1 / -1;
+      padding: 5rem;
+    }
+    @media only screen and (max-width: $bp-600px) {
       height: 45vh;
       grid-column: 1 / -1;
-      padding: 2rem;
+      padding: 5rem;
     }
   }
   &__img--bg {
@@ -36,6 +41,9 @@
       grid-row: 3 / 5;
       grid-column: 1 / -1;
     }
+    @media only screen and (max-width: $bp-600px) {
+      width: 65%;
+    }
   }
   &__img--2 {
     width: 110%;
@@ -46,6 +54,9 @@
     @media only screen and (max-width: $bp-800px) {
       width: 90%;
       grid-row: 1 / -1;
+    }
+    @media only screen and (max-width: $bp-600px) {
+      width: 110%;
     }
   }
   &__content {
